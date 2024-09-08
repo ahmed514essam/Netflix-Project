@@ -1,0 +1,6 @@
+.oneSec {
+    background-image: url(./imges/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+}
