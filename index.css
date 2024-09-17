@@ -1,6 +1,166 @@
 .oneSec {
-    background-image: url(./imges/bg.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 600px;
+  background-color: aqua;
+background-image: url(./imges/chBack.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+height: 760px;
+
+padding: 40px;
+/* border-bottom: 5px solid red; */
 }
+
+.icondev img {
+  object-fit: cover;
+  width: 100%;
+}
+.icondev {
+  width: 170px;
+  
+}
+nav {
+ padding-top: 5em;
+ width: 100%;
+
+padding-left: 50px;
+padding-right: 50px;
+}
+.rightside {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  
+}
+.btn {
+  background-color: red;
+}
+.ptnsSign {
+padding: 5px 20px;
+border-radius: 9px;
+border: 0;
+background-color: red;
+color: white;
+margin-right: 30px;
+}
+.dropdown {
+border: 1px solid white;
+color: white;
+border-radius: 7px;
+
+}
+.btntry {
+  color:white;
+}
+
+/* ============================================================== */
+
+.bigContainer {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 80px;
+}
+ .bigContainer h1 {
+  font-weight: 1000;
+  font-size: 4em;
+}
+.bigContainer h3 
+{
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bigContainer h4 {
+  font-weight: 800;
+  font-size: 1.3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.formStarted {
+  width: 100%;
+  gap: 15px;
+
+}
+.formStarted input {
+  width: 50%;
+  background-color: rgb(31, 31, 31);
+  border: 1px solid red;
+  padding-left: 10px;
+  height: 61px;
+  font-weight: 800;
+  border-radius: 8px;
+  margin-right: 7px;
+  opacity: 88%;
+  color: white;
+}
+.formStarted button {
+  width: 23%;
+  border: 0;
+  background-color: red;
+  color: white;
+  font-weight: 800;
+  height: 60px;
+  font-size: 1.7em;
+  margin-top: 18px;
+  border-radius: 8px;
+  margin-left: 7px;
+}
+.inEmailRe:focus {
+  border: 2px solid red !important;
+  outline: none; /* Remove default outline */
+  color: white;
+}
+
+/* State for input when hovered */
+.inEmailRe:hover {
+  border: 2px solid red !important;
+}
+
+/* State for input when active (clicked) */
+.inEmailRe:active {
+  border: 2px solid red !important;
+  outline: none;
+  color: white;
+}
+
+.filmsScroll {
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next line on smaller screens */
+  gap: 15px;
+  justify-content: center; /* Centers images horizontally */
+  
+}
+
+/* Default image width */
+.filmsScroll div {
+  width: 140px;
+  flex: 1 1 150px; 
+}
+
+.filmsScroll img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Medium screens (tablets, small desktops) */
+@media (min-width: 768px) {
+  .filmsScroll div {
+      width: 200px; /* Make images larger on medium screens */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  .filmsScroll div {
+      width: 250px; /* Increase image size for large screens */
+  }
+}
+@media (max-width: 600px) {
+  .filmsScroll {
+      justify-content: center; /* Center images on smaller screens */
+  }
+}
+
