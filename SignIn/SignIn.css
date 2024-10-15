@@ -1,0 +1,149 @@
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+.onlyS {
+  padding: 50px;
+  background-image: url(../imges/chBack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 760px;
+width: 100%;
+}
+.iconaya img {
+  object-fit: cover;
+  width: 100%;
+}
+.iconaya {
+  width: 170px;
+  margin-bottom: 30px;
+}
+.mainDiv {
+  margin-top: 30px;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Ensure content is above the background */
+  color: white;
+  flex-direction: column;
+  padding: 40px;
+}
+@media (max-width:519px) {
+  .mainDiv {
+    width: 100%;
+    margin: auto;
+  }
+  
+}
+.mainDiv::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: -9; /* Puts the background behind the content */
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+
+}
+.forms .inemail {
+margin-top: 20px;
+height: 50px;
+padding-left:10px;
+border: 1px solid rgb(161, 161, 161);
+background-color: rgba(0, 0, 0, 0.5); 
+color: white;
+}
+.forms .inpass {
+  margin-top: 20px;
+  height: 50px;
+  padding-left:10px;
+border: 1px solid rgb(131, 131, 131);
+background-color: rgba(0, 0, 0, 0.5); 
+color: white;
+}
+
+
+  
+
+.forms .butsin {
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  background-color: red;
+}
+.forms .orp {
+  margin-top: 10px;
+  text-align: center;
+}
+.forms .inusesin {
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 5px;
+  padding-left:10px;
+  border: 1px solid rgb(131, 131, 131);
+  background-color: rgba(0, 0, 0, 5); 
+  color: white;
+  text-align: center;
+  color: white;
+}
+.forms .inforget {
+  margin-top: 20px;
+  height: 50px;
+  text-decoration: none;
+font-weight: 500;
+font-size: 1.2em;
+text-align: center;
+color: white;
+}
+.asins {
+color: white;
+}
+.asin {
+  padding-left: 5px;
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+cursor: pointer;
+}
+.plo {
+  font-size: .9em;
+  color: rgb(192, 192, 192);
+}
+.alearn {
+  color: blue;
+  text-decoration: none;
+}
+.footer {
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  color: rgb(174, 174, 174);
+}
+@media (max-width:555px) {
+  .footer {
+    flex-direction: column;
+gap: 10px;
+  }
+}
