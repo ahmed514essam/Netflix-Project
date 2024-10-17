@@ -208,50 +208,7 @@ width: 100px;
   color: rgb(195, 195, 195);
 }
 
-/* .divsMoreReasons div {
-  
-  width: 300px;
 
-  
-}
-.divsMoreReasons {
-  width: 90%;
-  margin: auto;
-  
-  display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(140px ,auto));
-  grid-template-rows: repeat( auto-fill , 220px);
-  gap: 10px;
-  
-}
-.oneReas {
-  border-radius: 12px;
-  width: 140px;
-  height: 220px;
-  background-image: linear-gradient(to bottom right, rgb(59, 20, 132), rgb(93, 6, 8));
-  padding: 20px 7px;
-}
-.threeReas {
-  border-radius: 12px;
-  width: 140px;
-  height: 220px;
-  background-image: linear-gradient(to bottom right, rgb(59, 20, 132), rgb(93, 6, 8));
-  padding: 20px 7px;
-}
-.twoReas {
-  border-radius: 12px;
-  width: 140px;
-  height: 220px;
-  background-image: linear-gradient(to bottom right, rgb(59, 20, 132), rgb(93, 6, 8));
-  padding: 20px 7px;
-}
-.fourReas {
-  border-radius: 12px;
-  width: 140px;
-  height: 220px;
-  background-image: linear-gradient(to bottom right, rgb(59, 20, 132), rgb(93, 6, 8));
-  padding: 20px 7px;
-} */
 .divsMoreReasons {
   width: 90%;
   margin: auto;
