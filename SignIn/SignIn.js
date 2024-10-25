@@ -16,6 +16,6 @@ function signIn(event) {
 }
 
 
-function home() {
-    window.location.assign("/index.html")
+function home(event) {
+    window.location.assign("/index.html");
 }
