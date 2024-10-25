@@ -119,10 +119,12 @@ color: rgb(136, 136, 136);
     height: 60px;
     padding-left: 20px;
     font-size: 1.5em;
-    border: 1px solid #ccc; /* Initial border */
-    outline: none; /* Removes default focus outline */
+    border: 1px solid #ccc; 
+    outline: none; 
 }
-
+.bnm {
+    width: 100%;
+}
 .inputs button {
     border: 0;
     font-weight: 600;
@@ -133,8 +135,21 @@ color: rgb(136, 136, 136);
 }
 
 input:focus {
-    border: 2px solid rgb(93, 93, 255); /* Blue border on focus */
+    border: 2px solid rgb(93, 93, 255); 
 }
-
-
-
+.bnm {
+    text-decoration: none;
+    color: white;
+}
+.warn {
+    outline: none;
+    border: 2px solid red;
+}
+.we {
+    color: red;
+    text-align: center;
+}
+.wp {
+    color: red;
+text-align: center;
+}

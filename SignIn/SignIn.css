@@ -39,6 +39,14 @@ width: 100%;
   }
   
 }
+.klp {
+  text-decoration: none;
+  
+}
+.hh {
+  text-decoration: none;
+  color: white;
+}
 .mainDiv::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
