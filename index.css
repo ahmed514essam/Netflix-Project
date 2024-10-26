@@ -439,3 +439,7 @@ footer {
   flex-direction: column;
   padding-top: 50px;
 }
+.twoDivFooter a {
+
+color:rgb(167, 167, 167);
+}
