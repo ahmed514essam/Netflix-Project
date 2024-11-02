@@ -38,14 +38,14 @@
     We hate paperwork, too.</p>
 
     <div class="inputs">
-        <input class="emi" type="email" placeholder="Email"/>
-        <p class="we"></p>
-        <input class="paw" type="password" placeholder="Add Password"/>
-        <p class="wp"></p>
-
-<button onclick="createMem()"><a href="/sucessfulSign/sucess.html" class="bnm">Next</a></button>
-
+        <input class="emi" type="email" placeholder="Email" />
+        <p class="we warnEmail">Email is not correct!</p> <!-- Email warning message -->
+        <input class="paw" type="password" placeholder="Add Password" />
+        <p class="wp warnPass">Password must contain at least six characters, including letters and numbers.</p> <!-- Password warning message -->
+        <button onclick="createMem(event)" class="bnm">Next</button>
     </div>
+    
+    
 
 
 </div>

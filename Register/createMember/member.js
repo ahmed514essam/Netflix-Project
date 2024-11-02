@@ -1,68 +1,48 @@
 let emailIn = document.querySelector(".emi");
 let passIn = document.querySelector(".paw");
-let warnEmail = document.querySelector(".we");
-let warnPass = document.querySelector(".wp");
+let warnEmail = document.querySelector(".warnEmail");
+let warnPass = document.querySelector(".warnPass");
+
 let validEmail = /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/;
+let validPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
 
-let validPassword =  /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+function createMem(event) {
+    let EmailV = emailIn.value;
+    let PasswordV = passIn.value;
 
+    // Reset warnings and input borders
+    warnEmail.style.display = "none";
+    warnPass.style.display = "none";
+    emailIn.classList.remove("warn");
+    passIn.classList.remove("warn");
 
-
-function createMem() {
-    let EmailV = emailIn.value ;
-    let PasswordV = passIn.value ;
-
-
-if (EmailV.match(validEmail)){
-
-if (PasswordV.match(validPassword)) {
-
-    localStorage.clear();
-
-    localStorage.setItem("emaili" , EmailV);
-    localStorage.setItem("passwordi" , PasswordV);
-    window.Location("/sucessfulSign/sucess.html")
-
-
-}else {
-
-event.preventDefault();
-passIn.classList.add("warn");
-warnPass.innerHTML = " password contains at least six letters and numbers" ;
+    // Email validation
+    if (EmailV.match(validEmail)) {
+        // Password validation
+        if (PasswordV.match(validPassword)) {
+            // Save to localStorage and redirect
+            localStorage.clear();
+            localStorage.setItem("emaili", EmailV);
+            localStorage.setItem("passwordi", PasswordV);
+            window.location.href = "/sucessfulSign/sucess.html";
+        } else {
+            // Show password warning
+            event.preventDefault();
+            passIn.classList.add("warn");
+            warnPass.style.display = "flex";
+        }
+    } else {
+        event.preventDefault();
+        
+        // Show warnings for both email and password if invalid
+        if (!EmailV.match(validEmail)) {
+            emailIn.classList.add("warn");
+            warnEmail.style.display = "flex";
+        }
+        
+        if (!PasswordV.match(validPassword)) {
+            passIn.classList.add("warn");
+            warnPass.style.display = "flex";
+        }
+    }
 }
-
-
-
-}
-else {
-    
-
-if (PasswordV.match(validPassword)) {
-
-event.preventDefault();
-emailIn.classList.add("warn");
-warnEmail.innerHTML = "Email not correct!" ;
-
-}else {
-    event.preventDefault();
-    passIn.classList.add("warn");
-    emailIn.classList.add("warn");
-    warnPass.innerHTML = " password contains at least six letters and numbers" ;
-    warnEmail.innerHTML = "Email not correct!" ;
-
-
-    
-}
-
-
-
-}
-
-
-
-
-
-
-
-}
-

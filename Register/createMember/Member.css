@@ -142,14 +142,24 @@ input:focus {
     color: white;
 }
 .warn {
-    outline: none;
+    outline: 2px solid red;
     border: 2px solid red;
 }
 .we {
     color: red;
     text-align: center;
+    display: none;
 }
 .wp {
     color: red;
 text-align: center;
+display: none;
+}
+.warnEmail, .warnPass {
+    display: none; 
+    color: red; 
+}
+.warn {
+    outline: red;
+    border-color: red; 
 }

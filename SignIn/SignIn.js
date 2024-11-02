@@ -1,3 +1,5 @@
+
+
 let EmailInput = document.querySelector(".inemail");
 let PasswordInput = document.querySelector(".inpass");
 
@@ -19,3 +21,6 @@ function signIn(event) {
 function home(event) {
     window.location.assign("/index.html");
 }
+
+
+

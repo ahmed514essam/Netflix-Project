@@ -32,26 +32,15 @@
          
           <div class="rightside">
             
-            <div class="dropdown">
-              <a class="btntry btn dropdown-toggle text-white"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="defulthidden"><i class="fa-solid fa-globe"></i></span>
-                <span class="defultappear">English</span>
-
-              </a>
             
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">
-                  <i class="fa-solid fa-language"></i>
-                  English</a></li>
-                <li><a class="dropdown-item" href="#">
-                  
-                  <i class="fa-solid fa-language"></i>
-                                    العربية</a></li>
-              
-              </ul>
-            </div>
+<select name="" id="language-select">
+<option value="en">English</option>
+<option value="ar">Arabic</option>
+</select>
 
-            <a href="./SignIn/SignIn.html" class="ptnsSign" >Sign In</a>
+
+
+            <a href="./SignIn/SignIn.html" class="ptnsSign" id="signin" >Sign In</a>
 
           </div>
           
@@ -118,21 +107,24 @@ display:flex;
 
 
 <div class="bigContainer">
-  <h1 class="hhhh">Unlimited movies, TV
+  <h1 class="hhhh" id="hhhh">Unlimited movies, TV
     <br/>
-    shows, and more</h1>
-  <h3>Starts at EGP 70. Cancel anytime.</h2>
-  <h4>Ready to watch? Enter your email to create or restart your membership.
+    <span id="asd">
+    shows, and more
+  </span>
+  </h1>
+  <h3 id="xcv">Starts at EGP 70. Cancel anytime.</h2>
+  <h4 id="hf">Ready to watch? Enter your email to create or restart your membership.
   </h3>
 
 <form action="./Register/register.html" class="formStarted">
   <input class="inEmailRe" placeholder="Email address" required/>
-  <button class="btnSubmet" onclick="emailValid()" type="submit">Get Started</button>
+  <button class="btnSubmet" onclick="emailValid()" type="submit" id="get">Get Started</button>
 </form>
 
 
 <form action="/sucessfulSign/sucess.html" class="secondForm">
-<button class="btnFinish"><a class="finisha">Finish Sign-Up</a></button>
+<button class="btnFinish"><a class="finisha" id="finish">Finish Sign-Up</a></button>
 </form>
 
 
@@ -213,7 +205,7 @@ width: 95%;
 <section class="secTwoIon">
 
   <div class="oneFilmsOther">
-      <h2 class="headTrending">Trending Now</h2>
+      <h2 class="headTrending" id="tred">Trending Now</h2>
 
       <div class="filmsScroll">
           <div class="oneF"><img src="./films/one.jpg" alt="Film One" /></div>
@@ -233,23 +225,23 @@ width: 95%;
 <div class="divsMoreReasons" id="adveFilmShow">
 
   <div class="oneReas">
-    <h2 class="hidim">Enjoy on your TV</h2>
-    <p class="parraimg">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    <h2 class="hidim" id="oneh">Enjoy on your TV</h2>
+    <p class="parraimg" id="onep">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
     <div class="imgRd"><img src="./imges/screenR.png"/></div>
   </div>
   <div class="twoReas">
-    <h2 class="hidim">Download your shows to watch offline</h2>
-    <p class="parraimg">Save your favorites easily and always have something to watch.</p>
+    <h2 class="hidim" id="twoh">Download your shows to watch offline</h2>
+    <p class="parraimg" id="twop">Save your favorites easily and always have something to watch.</p>
     <div class="imgRg"><img src="./imges/rows.png"/></div>
   </div>
   <div class="threeReas">
-    <h2 class="hidim">Watch Everywhere</h2>
-    <p class="parraimg">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    <h2 class="hidim" id="threeh">Watch Everywhere</h2>
+    <p class="parraimg" id="threep">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
     <div class="imgRew"><img src="./imges/face.png"/></div>
   </div>
 <div class="fourReas">
-  <h2 class="hidim">Create Profiles For kids</h2>
-  <p class="parraimg">Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+  <h2 class="hidim" id="fourh">Create Profiles For kids</h2>
+  <p class="parraimg" id="fourp">Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
   <div class="imgRo"><img src="./imges/microphone.png"/></div>
 </div>
 
@@ -262,23 +254,24 @@ width: 95%;
 </div>
 
 <div class="acoordionDiv">
-  <h2 class="headAcordionDiv">Frequently Asked Questions
+  <h2 class="headAcordionDiv" id="fre">Frequently Asked Questions
     </h2>
 <div class="colu">
 <!-- =============================================================================== -->
 <p class="d-inline-flex gap-1"></p>
 
 <button class="ptnse btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-  <span>What is Netflix?</span>
+  <span id="span1">What is Netflix?</span>
   <i class="fa-solid fa-chevron-down"></i>
 </button>
 </p>
 <div class="collapse" id="collapseExample1">
-  <div class="card card-body">
+  <div class="card card-body" id="div1">
     
     Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
     
     You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+ 
   </div>
 </div>
 <!-- =========================================================================================== -->
@@ -287,12 +280,12 @@ width: 95%;
 <p class="d-inline-flex gap-1"></p>
 
 <button class="ptnse btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-  How much does Netflix cost?
+   <span id="span2"> How much does Netflix cost? </span>
   <i class="fa-solid fa-chevron-down"></i>
 </button>
 </p>
 <div class="collapse" id="collapseExample2">
-  <div class="card card-body">
+  <div class="card card-body" id="div2">
     
     Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from EGP 70 to EGP 165 a month. No extra costs, no contracts.  </div>
 </div>
@@ -302,30 +295,32 @@ width: 95%;
 <p class="d-inline-flex gap-1"></p>
 
 <button class="ptnse btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-  Where can I watch?
+  <span id="span3"> can I watch? </span>
   <i class="fa-solid fa-chevron-down"></i>
 </button>
 </p>
 <div class="collapse" id="collapseExample3">
-  <div class="card card-body">
+  <div class="card card-body" id="div3">
     Where can I watch?
     Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
     
     You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.  </div>
-</div>
+
+
+  </div>
 <!-- =========================================================================================== -->
 
 <!-- =============================================================================== -->
 <p class="d-inline-flex gap-1"></p>
 
 <button class="ptnse btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-  How do I cancel?
+   <span id="span4"> How do I cancel? </span>
   <i class="fa-solid fa-chevron-down"></i>
 </button>
 </p>
 <div class="collapse" id="collapseExample4">
-  <div class="card card-body">
-  
+  <div class="card card-body" id="div4">
+   
     Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.  </div>
 </div>
 <!-- =========================================================================================== -->
@@ -334,12 +329,12 @@ width: 95%;
 <p class="d-inline-flex gap-1"></p>
 
 <button class="ptnse btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
-  What can I watch on Netflix?
+  <span id="span5"> can I watch on Netflix? </span>
   <i class="fa-solid fa-chevron-down"></i>
 </button>
 </p>
 <div class="collapse" id="collapseExample5">
-  <div class="card card-body">
+  <div class="card card-body" id="div5">
     
     Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
       </div>
@@ -350,17 +345,19 @@ width: 95%;
 <p class="d-inline-flex gap-1"></p>
 
 <button class="ptnse btn btn" onclick="changArro()" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
-  Is Netflix good for kids?
+  <span id="span6"> Netflix good for kids? </span>
   <i class="fa-solid fa-chevron-down"></i>
 </button>
 </p>
 <div class="collapse" id="collapseExample6">
-  <div class="card card-body">
+  <div class="card card-body" id="div6">
     
     The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
     
     Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.  </div>
-</div>
+
+
+  </div>
 <!-- =========================================================================================== -->
 
 
@@ -426,7 +423,7 @@ width: 95%;
 
 
 <section class="lastSectionSearch">
-  <h3 class="hThreeSearch">Ready to watch? Enter your email to create or restart your membership.
+  <h3 class="hThreeSearch" id="reafyy">Ready to watch? Enter your email to create or restart your membership.
   </h3>
 
 <div class="searchDiv">
@@ -435,7 +432,7 @@ width: 95%;
 
 <input type="search" placeholder="Email Address" />
 <button>
-  Get Started
+  <span id="get">Get Started </span>
   <i class="fa-solid fa-chevron-right"></i>
 </button>
 
@@ -450,7 +447,7 @@ width: 95%;
 <footer>
 
 <div class="oneDivFoter">
-  <a>Questions? Contact Us</a>
+  <a id="fot">Questions? Contact Us</a>
 </div>
 <style>
   .oneDivFoter {
